@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes em css</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            medidas absolutas: cm, mm, in, px, pt, pc
+            
+            medidas relativas: em, ex, rem, vw, vh, %*/
+            font-size: 1em; /*normalmente e usando 16px = 1em*/
+           /* font-weight: normal; 
+            lighter, normal, bold, bolder
+            font-style: italic;
+            text-decoration: underline; */
+        }
+        h1 {
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif
+            font-weight: bolder
+            font-size: 3em
+            font-style: italic  */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto obcaecati vero quidem quaerat. Error molestias repellat iste quae deleniti itaque illum, enim ipsum et adipisci vel totam quam qui quia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, corrupti! Incidunt temporibus sunt in repudiandae corrupti eos suscipit ea aperiam est, illum nam. Labore fuga provident impedit modi amet blanditiis</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim doloremque iste voluptatibus dolorem, cupiditate iusto facilis magni exercitationem, repellat unde ad neque harum consectetur. Aut, vitae! Cupiditate, alias molestiae!</p>
+
+    <h2>subtitulo do exercicio</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus harum nulla corporis illo recusandae consequatur commodi cumque, voluptas aliquam, dolore fugiat maiores similique. Dolor minus architecto autem obcaecati vel odit!</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  =  id
+            .  =  class
+            :  =  pseudo-class
+            ::  =  pseudo-element
+            >  =  clildren
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(255, 38, 52);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(23, 18, 157);
+
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(253, 28, 107);
+        }
+
+       /* a::before {
+            content: '⇒ ';
+        }
+
+        a::after {
+            content: ' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+        }
+            */
+
+        .especial {
+            background-color: rgb(181, 102, 255);
+        }
+
+        .especial::before {
+            content: '⇒ ';
+        }
+
+        .especial::after {
+            content: ' ⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/RuthWmota" target="_blank" class="especial">GITHUB</a></li>
+        <li><a href="http://youtube.com" target="_blank" class="especial">YOUTUBE</a></li>
+        <li><a href="http://cursoemvideo.com/meus-cursos/" target="_blank">SITE</a></li>
+    </ul>
+</body>
+</html>
